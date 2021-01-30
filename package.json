@@ -1,0 +1,64 @@
+{
+  "name": "tik-tak",
+  "version": "0.0.1",
+  "description": "Pomodoro timer",
+  "private": true,
+  "author": "Evgeniy Kovrov <evgeniy@nyxene.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nyxene/tik-tak.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "pomodoro"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start": "parcel serve \"./src/index.html\" --dist-dir \"./build\"",
+    "build": "cross-env NODE_ENV=production parcel build \"./src/index.html\" --dist-dir \"./build\" --public-url \"./\" --no-source-maps --no-cache",
+    "clean": "rimraf \"build\"",
+    "ts:check": "tsc --noEmit",
+    "format": "cross-var prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format:ci": "cross-var prettier --check \"**/*.{ts,tsx,json,md}\"",
+    "lint": "cross-var eslint --quiet --ext \".ts,.tsx\" \"./src\"",
+    "lint:ci": "yarn run lint",
+    "test": "jest --watch",
+    "test:ci": "jest --coverage"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "2.0.0-beta.1",
+    "@parcel/transformer-raw": "2.0.0-beta.1",
+    "@parcel/transformer-typescript-tsc": "2.0.0-beta.1",
+    "@parcel/validator-typescript": "2.0.0-beta.1",
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.3",
+    "@testing-library/react-hooks": "5.0.3",
+    "@types/jest": "26.0.20",
+    "@types/react": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.1",
+    "@typescript-eslint/parser": "4.14.1",
+    "cross-env": "7.0.3",
+    "eslint": "7.18.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "husky": "4.3.8",
+    "jest": "26.6.3",
+    "jest-transform-stub": "2.0.0",
+    "jest-watch-typeahead": "0.6.1",
+    "lint-staged": "10.5.3",
+    "parcel": "2.0.0-beta.1",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.0",
+    "typescript": "4.1.3"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "curly": "error",
+    "no-console": "error",
+    "no-debugger": "error",
+    "no-extra-semi": "error",
+    "no-plusplus": "off",
+    "no-useless-constructor": "off",
+    "semi": ["error", "always"],
+    "semi-spacing": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/interface-over-type-literal": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/object-literal-sort-keys": "off",
+    "@typescript-eslint/ordered-imports": "off",
+    "react/default-props-match-prop-types": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/sort-comp": "off"
+  }
+}

@@ -1,0 +1,10 @@
+.idea
+.vscode
+/build
+/artifacts
+/node_modules
+/public
+package.json
+package-lock.json
+yarn.json
+*.md
